@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Heads or Tails | Homepage</title>
+    </head>
+    <body style="background-color:#e0ffdd">
+        <div style="text-align:center">
+            <img src="{{ url_for('static', filename='main.jpg') }}" alt="START">
+            <div style="align:center">
+                <button style="font-size: 18px;cursor:not-allowed;">
+                    <a href={{ url_for('result') }}>START</a>
+                </button>
+                <h3>The Game of Heads Or Tails</h3>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Heads or Tails | Resultpage</title>
+    </head>
+    <body style="background-color:#264653">
+        <div style="text-align:center; border: 5px solid rgb(0, 0, 0); padding: 80px; margin: 50px 350px; background-color: rgb(13, 175, 34)">
+            <h3 style="text-align:left">Result : </h3>
+            <div style="text-align:center">
+                {% if heads_or_tails == 1 %}
+                    <img src="{{url_for('static', filename='head.png')}}" alt="Head" />
+                    <p>Head</p>
+                {% else %}
+                    <img src="{{url_for('static', filename='tail.png')}}" alt="Tail" />
+                    <p>Tail</p>
+                {% endif %}
+            </div>
+
+            <br><br><br>
+            <button style="font-size: 16px; cursor:not-allowed;">
+                <a href= {{ result }}>Again ?!</a>
+            </button>
+            <br><br>
+            <button style="font-size: 14px;cursor:not-allowed;">
+                <a href={{ url_for('index') }}>Exit</a>
+            </button>
+        </div>
+    </body>
+</html>
