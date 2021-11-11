@@ -56,7 +56,7 @@ To implement the project :
 flask run
 ```
 
-If you want to boot the project in debug mode :
+If you want to run the project in debug mode :
 ```python
 FLASK_ENV=development flask run
 ```
